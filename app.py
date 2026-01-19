@@ -64,17 +64,25 @@ Message:
                 subject=f"New Inquiry: {service}",
                 plain_text_content=email_body,
             )
-
-            mail.reply_to = email  # so you can reply directly
+            mail.reply_to = email
 
             sg = SendGridAPIClient(SENDGRID_API_KEY)
-            sg.send(mail)
+            response = sg.send(mail)
 
-            flash("Thank you! Your message has been sent successfully.")
+            print("SENDGRID RESPONSE STATUS:", response.status_code)
+            print("SENDGRID RESPONSE HEADERS:", response.headers)
+            print("SENDGRID RESPONSE BODY:", response.body)
+
+            if response.status_code >= 200 and response.status_code < 300:
+                flash("Thank you! Your message has been sent successfully.")
+            else:
+                flash("Email failed to send. Please try again later.")
+
             return redirect(url_for("contact"))
 
         except Exception as e:
-            print("SENDGRID ERROR:", e)
+            import traceback
+            print("SENDGRID ERROR:", traceback.format_exc())
             flash("Something went wrong. Please try again later.")
             return redirect(url_for("contact"))
 
