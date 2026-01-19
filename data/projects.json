@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Alertify App",
+    "description": "Alertify is a community-driven incident reporting app that helps people stay informed and safer. Users can report accidents, road hazards, and public disturbances with photos, descriptions, and precise locations. The app provides real-time nearby reports, status updates, map-based navigation, and personal report tracking &mdash; all designed for speed, simplicity, and security.",
+    "tech_stack": [
+      "Flutter",
+      "Firebase",
+      "Google Maps API",
+      "REST API",
+      "Android",
+      "iOS"
+    ],
+    "links": {
+      "playstore": "https://play.google.com/store/apps/details?id=com.wira.alertify",
+      "appstore": "https://apps.apple.com/us/app/alertify-community-safety/id6744561584"
+    }
+  },
+  {
+    "title": "YouTube Ad Blocker",
+    "description": "A simple Python desktop app that automatically skips YouTube ads using Selenium and a Tkinter GUI.",
+    "tech_stack": [
+      "Python",
+      "Browser Automation",
+      "Regex",
+      "Scripting"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/youtube-ad-skipper.git"
+    }
+  },
+  {
+    "title": "Text to Morse Converter",
+    "description": "A professional Python desktop application that converts text to Morse code and Morse code back to text. Includes audio playback (beeps) and a dark mode UI.",
+    "tech_stack": [
+      "Python",
+      "CLI",
+      "Data Structures"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/morse-code-converter.git"
+    }
+  }
+]

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Wira</title>
+
+  <!-- Font Awesome (social icons) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Wira Ahmad Fauzi</h2>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/portfolio">Portfolio</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <button id="darkToggle" class="dark-toggle">
+      🌙
+    </button>
+</nav>
+
+<section class="contact contact-grid">
+  <!-- LEFT -->
+  <div class="contact-left">
+    <h1>Let’s Work Together</h1>
+
+    <div class="contact-info">
+      <p>Email: <strong>wiraahmadfauzi@gmail.com</strong></p>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/lil.kartoon" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://github.com/WiraAFauzi" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="success-message">{{ messages[0] }}</div>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="/contact">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option>UX Design</option>
+        <option>UI Design</option>
+        <option>App Development</option>
+        <option>Web Development</option>
+        <option>Other</option>
+      </select>
+
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- DOWNLOAD CV -->
+    <a href="/static/files/Wira Resume.pdf" class="cv-btn" download>
+      Download CV
+    </a>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="contact-image">
+    <img src="{{ url_for('static', filename='images/desktop.jpg') }}" alt="Workspace">
+  </div>
+</section>
+
+  <footer>
+    © 2026 Wira. Built with code & curiosity.
+  </footer>
+<script src="/static/js/theme.js"></script>  
+</body>
+</html>

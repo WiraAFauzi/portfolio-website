@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me | Wira</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<nav>
+  <h2>Wira Ahmad Fauzi</h2>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/portfolio">Portfolio</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <button id="darkToggle" class="dark-toggle">
+      🌙
+    </button>
+</nav>
+
+<section class="about">
+  <div class="about-grid">
+
+     <div class="about-image">
+    <img src="{{ url_for('static', filename='images/laptop.jpg') }}" alt="Wira working">
+  </div>
+
+    <div class="about-content">
+      <h1>About Me</h1>
+
+      <p>
+        I’m Wira, a freelance developer who enjoys turning ideas into real,
+        usable products. I work across web and mobile platforms, focusing on
+        clean design, solid logic, and real-world impact.
+      </p>
+
+      <p>
+        I’m especially drawn to problem-solving projects — community platforms,
+        automation tools, and applications that make everyday life simpler,
+        safer, and more connected.
+      </p>
+
+      <p>
+        I believe good software should feel effortless to use, reliable under
+        pressure, and thoughtfully built from the inside out.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+    © 2026 Wira. Built with code & curiosity.
+  </footer>
+<script src="/static/js/theme.js"></script>  
+</body>
+</html>
