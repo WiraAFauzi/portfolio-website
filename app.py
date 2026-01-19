@@ -47,7 +47,6 @@ def contact():
             service = request.form["service"]
             message = request.form["message"]
 
-            # Email to yourself
             email_body = f"""
 New Portfolio Inquiry 🚀
 
@@ -69,18 +68,16 @@ Message:
 
             sg = SendGridAPIClient(SENDGRID_API_KEY)
             response = sg.send(mail)
+
             print("SENDGRID RESPONSE STATUS:", response.status_code)
+            print("SENDGRID RESPONSE HEADERS:", response.headers)
+            print("SENDGRID RESPONSE BODY:", response.body)
 
-            # Confirmation email to user
-            confirmation = Mail(
-                from_email=FROM_EMAIL,
-                to_emails=email,
-                subject="Thanks for contacting Wira!",
-                plain_text_content=f"Hi {name},\n\nThanks for reaching out about {service}. I'll get back to you soon!\n\n— Wira"
-            )
-            sg.send(confirmation)
+            if response.status_code >= 200 and response.status_code < 300:
+                flash("Thank you! Your message has been sent successfully.")
+            else:
+                flash("Email failed to send. Please try again later.")
 
-            flash("Thank you! Your message has been sent successfully.")
             return redirect(url_for("contact"))
 
         except Exception as e:
