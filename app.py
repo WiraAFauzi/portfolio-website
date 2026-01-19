@@ -1,19 +1,27 @@
 from flask import Flask, render_template, jsonify, request, flash, redirect, url_for
 import json
-import smtplib
 import os
-from email.message import EmailMessage
 from dotenv import load_dotenv
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 
-# Load environment variables
+# --------------------
+# LOAD ENV VARIABLES
+# --------------------
 load_dotenv()
 
+SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
+FROM_EMAIL = os.environ.get("FROM_EMAIL")  # must be verified in SendGrid
+
+# --------------------
+# APP SETUP
+# --------------------
 app = Flask(__name__)
-app.secret_key = "super-secret-key"
+app.secret_key = os.environ.get("SECRET_KEY", "fallback-secret-key")
 
-GMAIL_USER = os.environ.get("GMAIL_USER")
-GMAIL_PASS = os.environ.get("GMAIL_PASS")
-
+# --------------------
+# ROUTES
+# --------------------
 
 @app.route("/")
 def home():
@@ -39,34 +47,39 @@ def contact():
             service = request.form["service"]
             message = request.form["message"]
 
-            msg = EmailMessage()
-            msg["Subject"] = f"New Inquiry: {service}"
-            msg["From"] = GMAIL_USER              # MUST be your Gmail
-            msg["To"] = GMAIL_USER
-            msg["Reply-To"] = email               # User email goes here
+            email_body = f"""
+New Portfolio Inquiry 🚀
 
-            msg.set_content(f"""
 Name: {name}
 Email: {email}
 Service: {service}
 
 Message:
 {message}
-""")
+"""
 
-            with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-                smtp.login(GMAIL_USER, GMAIL_PASS)
-                smtp.send_message(msg)
+            mail = Mail(
+                from_email=FROM_EMAIL,
+                to_emails=FROM_EMAIL,
+                subject=f"New Inquiry: {service}",
+                plain_text_content=email_body,
+            )
+
+            mail.reply_to = email  # so you can reply directly
+
+            sg = SendGridAPIClient(SENDGRID_API_KEY)
+            sg.send(mail)
 
             flash("Thank you! Your message has been sent successfully.")
             return redirect(url_for("contact"))
 
         except Exception as e:
-            print("EMAIL ERROR:", e)
+            print("SENDGRID ERROR:", e)
             flash("Something went wrong. Please try again later.")
             return redirect(url_for("contact"))
 
     return render_template("contact.html")
+
 
 @app.route("/api/projects")
 def projects():
@@ -74,5 +87,8 @@ def projects():
         return jsonify(json.load(f))
 
 
+# --------------------
+# RUN SERVER
+# --------------------
 if __name__ == "__main__":
     app.run(debug=True)
