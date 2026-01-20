@@ -39,5 +39,22 @@
     "links": {
       "github": "https://github.com/WiraAFauzi/morse-code-converter.git"
     }
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "description": "My personal developer portfolio showcasing projects, skills, and experience. Built with Flask and deployed publicly with modern tooling, dark mode support, animations, and a fully working contact form.",
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "Gunicorn",
+      "Sendgrid",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Render"
+    ],
+    "links": {
+      "website": "https://wira-portfolios.onrender.com/"
+    }
   }
 ]

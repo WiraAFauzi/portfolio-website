@@ -1,7 +1,8 @@
 const iconMap = {
   playstore: "/static/icons/playstore.svg",
   appstore: "/static/icons/appstore.svg",
-  github: "/static/icons/github.svg"
+  github: "/static/icons/github.svg",
+  website: "/static/icons/website.svg"
 };
 
 fetch("/api/projects")
