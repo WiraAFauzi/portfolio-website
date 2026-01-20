@@ -56,5 +56,15 @@
     "links": {
       "website": "https://wira-portfolios.onrender.com/"
     }
+  },
+ {
+  "title": "Tic Tac Toe (Python)",
+  "description": "A text-based Tic Tac Toe game playable in the command line with AI difficulty levels, score tracking, and best-of series mode.",
+  "tech_stack": [
+    "Python"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/tic-tac-toe-.git"
   }
+}
 ]
