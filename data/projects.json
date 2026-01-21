@@ -57,14 +57,27 @@
       "website": "https://wira-portfolios.onrender.com/"
     }
   },
- {
-  "title": "Tic Tac Toe (Python)",
-  "description": "A text-based Tic Tac Toe game playable in the command line with AI difficulty levels, score tracking, and best-of series mode.",
-  "tech_stack": [
-    "Python"
-  ],
-  "links": {
-    "github": "https://github.com/WiraAFauzi/tic-tac-toe-.git"
+  {
+    "title": "Tic Tac Toe (Python)",
+    "description": "A text-based Tic Tac Toe game playable in the command line with AI difficulty levels, score tracking, and best-of series mode.",
+    "tech_stack": [
+      "Python"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/tic-tac-toe-.git"
+    }
+  },
+  {
+    "title": "Watermark Studio",
+    "description": "Watermark Studio is a desktop application I built using **Python, Tkinter, and Pillow** to simplify the process of adding watermarks to images. Instead of relying on complex image editing software, this tool provides a clean and intuitive interface that lets you protect and brand your photos in seconds.",
+    "tech_stack": [
+      "Python",
+      "Tkinter",
+      "Pillow",
+      "tkinterdnd2"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/watermark-studio.git"
+    }
   }
-}
 ]
