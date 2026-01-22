@@ -90,5 +90,16 @@
     "links": {
       "github": "https://github.com/WiraAFauzi/typing-speed-test.git"
     }
+  },
+  {
+    "title": "Breakout Game",
+    "description": "A polished Python arcade game inspired by the classic Breakout. Built with Pygame, featuring a start menu, lives selector, instructions, and a Game Over screen with Play Again/Quit options.",
+    "tech_stack": [
+      "Python",
+      "Pygame"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/breakout-game.git"
+    }
   }
 ]
