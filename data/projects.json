@@ -79,5 +79,16 @@
     "links": {
       "github": "https://github.com/WiraAFauzi/watermark-studio.git"
     }
+  },
+  {
+    "title": "Typing Speed Trainer",
+    "description": "A modern Tkinter desktop app that tests and trains your typing speed. Built with Python, featuring a clean UI, rotating text samples, a countdown timer, and a persistent leaderboard.",
+    "tech_stack": [
+      "Python",
+      "Tkinter"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/typing-speed-test.git"
+    }
   }
 ]
