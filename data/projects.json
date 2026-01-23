@@ -101,5 +101,21 @@
     "links": {
       "github": "https://github.com/WiraAFauzi/breakout-game.git"
     }
+  },
+  {
+    "title": "Cafe Explorer",
+    "description": "A Flask web application to explore and manage work-friendly cafes. Features include user authentication (register/login/logout), add/edit/delete cafes, interactive map integration with Leaflet, and Bootstrap styling for a clean UI. Designed as a portfolio-ready project and deployed on Render.",
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "Flask-Login",
+      "Flask-SQLAlchemy",
+      "Bootstrap",
+      "Leaflet.js"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/Cafe-Explorer.git",
+      "website": "https://cafe-explorer.onrender.com/"
+    }
   }
 ]
