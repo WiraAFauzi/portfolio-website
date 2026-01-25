@@ -117,5 +117,21 @@
       "github": "https://github.com/WiraAFauzi/Cafe-Explorer.git",
       "website": "https://cafe-explorer.onrender.com/"
     }
+  },
+  {
+    "title": "Todo List",
+    "description": "A Flask-based Todo List application with user authentication, CRUD functionality for tasks, and a responsive Bootstrap UI. Designed for productivity and portfolio presentation, deployed on Render with PostgreSQL integration.",
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "Flask-Login",
+      "Flask-SQLAlchemy",
+      "Bootstrap",
+      "PostgreSQL"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/todo-list.git",
+      "website": "https://todo-list-yukr.onrender.com/login"
+    }
   }
 ]
