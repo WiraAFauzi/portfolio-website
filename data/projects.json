@@ -133,5 +133,21 @@
       "github": "https://github.com/WiraAFauzi/todo-list.git",
       "website": "https://todo-list-yukr.onrender.com/login"
     }
+  },
+  {
+  "title": "Write or Vanish Game",
+  "description": "A gamified Flask-based writing application that challenges users to keep typing or risk losing their text. Features include difficulty levels, word goals, progress bar countdown, Grace Mode, auto-save, theme toggle (dark/light/sepia), session history, and achievements. Designed for creativity and portfolio presentation, deployed on Render with Gunicorn for production.",
+  "tech_stack": [
+    "Python",
+    "Flask",
+    "Bootstrap",
+    "JavaScript",
+    "Gunicorn",
+    "Render"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/write-or-vanish.git",
+    "website": "https://write-or-vanish-wira.onrender.com/"
   }
+}
 ]
