@@ -149,5 +149,23 @@
     "github": "https://github.com/WiraAFauzi/write-or-vanish.git",
     "website": "https://write-or-vanish-wira.onrender.com/"
   }
-}
+},
+{
+      "title": "PDF to Audiobook Converter",
+      "description": "A Python-based desktop application that converts PDFs into audiobooks using Google Cloud Text-to-Speech. Supports both text-based and scanned PDFs with OCR fallback via Tesseract. Features include a GUI built with Tkinter, voice selection, speaking rate adjustment, progress bar feedback, and secure API key management via dotenv. Designed for accessibility, productivity, and portfolio presentation.",
+      "tech_stack": [
+        "Python",
+        "Tkinter",
+        "PyPDF2",
+        "PyMuPDF",
+        "Pytesseract",
+        "Pillow",
+        "Requests",
+        "Google Cloud Text-to-Speech",
+        "dotenv"
+      ],
+      "links": {
+        "github": "https://github.com/WiraAFauzi/text-to-speech.git"
+      }
+  }
 ]
