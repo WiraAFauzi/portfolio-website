@@ -163,9 +163,9 @@
         "Requests",
         "Google Cloud Text-to-Speech",
         "dotenv"
-      ],
+  ],
       "links": {
         "github": "https://github.com/WiraAFauzi/text-to-speech.git"
-      }
   }
+}
 ]
