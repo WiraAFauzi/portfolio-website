@@ -167,5 +167,23 @@
       "links": {
         "github": "https://github.com/WiraAFauzi/text-to-speech.git"
   }
+},
+{
+  "title": "Image Color Extractor",
+  "description": "A Flask-based web application that extracts the most dominant colors from uploaded images using KMeans clustering. Features include an intuitive upload interface, dynamic color swatch generation, percentage breakdowns, and palette downloads in JSON, CSS, and PNG formats. Designed for designers, developers, and portfolio presentation with clean UI and linter-safe code.",
+  "tech_stack": [
+    "Python",
+    "Flask",
+    "Pillow",
+    "NumPy",
+    "Scikit-learn",
+    "HTML5",
+    "CSS3",
+    "Jinja2"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/Image-Color-Extractor.git",
+    "website": "https://image-color-extractor-2ggd.onrender.com"
+  }
 }
 ]
