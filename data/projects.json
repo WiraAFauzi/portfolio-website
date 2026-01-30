@@ -185,5 +185,21 @@
     "github": "https://github.com/WiraAFauzi/Image-Color-Extractor.git",
     "website": "https://image-color-extractor-2ggd.onrender.com"
   }
+},
+{
+  "title": "Multi-Site Recipe Scraper (GUI)",
+  "description": "A Python Tkinter-based GUI application that scrapes recipes from AllRecipes, BBC Good Food, and Epicurious. Features include dynamic recipe search, progress updates, thumbnail image embedding in Excel, clickable recipe links, ratings and review counts, and export to CSV, Excel, and JSON formats. Designed for portfolio presentation with clean code, dark mode UI, and search history logging.",
+  "tech_stack": [
+    "Python",
+    "Tkinter",
+    "Playwright",
+    "Pandas",
+    "OpenPyXL",
+    "Pillow",
+    "recipe-scrapers"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/Multi-Site-Recipe-Scraper.git"
+  }
 }
 ]
