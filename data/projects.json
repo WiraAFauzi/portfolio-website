@@ -215,5 +215,22 @@
   "links": {
     "github": "https://github.com/WiraAFauzi/space-invaders.git"
   }
+},
+{
+  "title": "Food Facts Finder (Flask Web App)",
+  "description": "A nutrition-focused web application powered by Flask and the Open Food Facts API. Users can search products by barcode or name, view nutrition dashboards with color-coded bars, check health indicators (Healthy / Moderate / Unhealthy), and save products to Favorites stored locally in the browser. Includes a Favorites modal for managing saved items and rotating daily food safety/nutrition articles.",
+  "tech_stack": [
+    "Python",
+    "Flask",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Open Food Facts API",
+    "Gunicorn"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/food-facts.git",
+    "website": "https://food-facts-6p6p.onrender.com/"
+  }
 }
 ]
