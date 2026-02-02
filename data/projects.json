@@ -201,5 +201,19 @@
   "links": {
     "github": "https://github.com/WiraAFauzi/Multi-Site-Recipe-Scraper.git"
   }
+},
+{
+  "title": "Space Invaders (Python Turtle Game)",
+  "description": "A retro-style Space Invaders clone built with Python’s turtle graphics library. Features include alien grid movement, player-controlled laser base, bunkers that absorb damage, alien bullets, mystery ship with random power-ups (Rapid Fire, Spread Shot, Pierce), multiple levels with scaling difficulty, lives counter, and a replayable Game Over screen. Designed for portfolio presentation with clean, modular code and arcade-inspired gameplay.",
+  "tech_stack": [
+    "Python",
+    "Turtle Graphics",
+    "Time",
+    "Random",
+    "Sys"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/space-invaders.git"
+  }
 }
 ]
