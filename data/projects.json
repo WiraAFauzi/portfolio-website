@@ -249,8 +249,7 @@
     "Gunicorn"
   ],
   "links": {
-    "github": "https://github.com/WiraAFauzi/flask-ecommerce-stripe",
-    "website": "Not deployed (portfolio showcase)"
+    "github": "https://github.com/WiraAFauzi/flask-ecommerce-stripe"
   }
 }
 ]
