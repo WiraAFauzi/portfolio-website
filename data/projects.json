@@ -232,5 +232,25 @@
     "github": "https://github.com/WiraAFauzi/food-facts.git",
     "website": "https://food-facts-6p6p.onrender.com/"
   }
+},
+{
+  "title": "Flask E-Commerce Web App (Stripe Integration)",
+  "description": "A full-stack e-commerce web application built with Flask. Features product browsing, cart and order management, secure Stripe Checkout payments, and an admin dashboard for managing products and orders. Includes user authentication, role-based admin access, image uploads, and Stripe Webhook verification for real-world payment handling. Designed as a production-style portfolio project.",
+  "tech_stack": [
+    "Python",
+    "Flask",
+    "SQLAlchemy",
+    "SQLite",
+    "HTML",
+    "CSS",
+    "Jinja2",
+    "Stripe API",
+    "Stripe Webhooks",
+    "Gunicorn"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/flask-ecommerce-stripe",
+    "website": "Not deployed (portfolio showcase)"
+  }
 }
 ]
