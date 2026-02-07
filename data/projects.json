@@ -251,5 +251,20 @@
   "links": {
     "github": "https://github.com/WiraAFauzi/flask-ecommerce-stripe"
   }
+},
+{
+  "title": "Downloads Organizer Dashboard",
+  "description": "A Flask-powered automation tool that organizes files in the Downloads folder by type. Provides a clean dashboard UI with one-click cleanup, category summaries, progress bars, and detailed logs of moved files. Designed as a practical automation project and portfolio showcase.",
+  "tech_stack": [
+    "Python",
+    "Flask",
+    "HTML",
+    "CSS",
+    "Jinja2",
+    "OS & Shutil"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/organise_downloads.git"
+  }
 }
 ]
