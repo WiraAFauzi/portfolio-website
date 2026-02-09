@@ -266,5 +266,29 @@
   "links": {
     "github": "https://github.com/WiraAFauzi/organise_downloads.git"
   }
+},
+{
+  "title": "Space Missions Data Analysis (1957–2020)",
+  "description": "A comprehensive data analysis project examining global space missions from the beginning of the Space Race to the modern commercial era. The project explores launch trends, organisational dominance, mission reliability, seasonal patterns, cost dynamics, and geopolitical competition using structured data cleaning, feature engineering, and time-series visualization techniques.",
+  "tech_stack": [
+    "Python",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "Plotly",
+    "Jupyter Notebook"
+  ],
+  "skills_demonstrated": [
+    "Data Cleaning & Preprocessing",
+    "Feature Engineering",
+    "Time-Series Analysis",
+    "Exploratory Data Analysis (EDA)",
+    "Data Visualization",
+    "Geopolitical & Economic Trend Analysis"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/space-missions-analysis"
+  }
 }
 ]
