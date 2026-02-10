@@ -290,5 +290,30 @@
   "links": {
     "github": "https://github.com/WiraAFauzi/space-missions-analysis"
   }
+},
+{
+  "title": "Fatal Police Shootings Data Analysis (2015–Present)",
+  "description": "A comprehensive data analysis project examining fatal police shootings in the United States since 2015. The project explores demographic patterns, socioeconomic correlations, geographic distribution, mental health indicators, proportional racial representation, and temporal trends using structured data cleaning, aggregation, and advanced visualization techniques.",
+  "tech_stack": [
+    "Python",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "Plotly",
+    "Jupyter Notebook"
+  ],
+  "skills_demonstrated": [
+    "Data Cleaning & Preprocessing",
+    "Feature Engineering",
+    "Exploratory Data Analysis (EDA)",
+    "Time-Series Analysis",
+    "Geospatial Visualization (Choropleth Mapping)",
+    "Statistical Correlation Analysis",
+    "Demographic & Socioeconomic Analysis"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/fatal-police-shootings-analysis"
+  }
 }
 ]
