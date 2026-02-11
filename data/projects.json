@@ -18,12 +18,7 @@
   {
     "title": "YouTube Ad Blocker",
     "description": "A simple Python desktop app that automatically skips YouTube ads using Selenium and a Tkinter GUI.",
-    "tech_stack": [
-      "Python",
-      "Browser Automation",
-      "Regex",
-      "Scripting"
-    ],
+    "tech_stack": ["Python", "Browser Automation", "Regex", "Scripting"],
     "links": {
       "github": "https://github.com/WiraAFauzi/youtube-ad-skipper.git"
     }
@@ -31,11 +26,7 @@
   {
     "title": "Text to Morse Converter",
     "description": "A professional Python desktop application that converts text to Morse code and Morse code back to text. Includes audio playback (beeps) and a dark mode UI.",
-    "tech_stack": [
-      "Python",
-      "CLI",
-      "Data Structures"
-    ],
+    "tech_stack": ["Python", "CLI", "Data Structures"],
     "links": {
       "github": "https://github.com/WiraAFauzi/morse-code-converter.git"
     }
@@ -60,9 +51,7 @@
   {
     "title": "Tic Tac Toe (Python)",
     "description": "A text-based Tic Tac Toe game playable in the command line with AI difficulty levels, score tracking, and best-of series mode.",
-    "tech_stack": [
-      "Python"
-    ],
+    "tech_stack": ["Python"],
     "links": {
       "github": "https://github.com/WiraAFauzi/tic-tac-toe-.git"
     }
@@ -70,12 +59,7 @@
   {
     "title": "Watermark Studio",
     "description": "Watermark Studio is a desktop application I built using **Python, Tkinter, and Pillow** to simplify the process of adding watermarks to images. Instead of relying on complex image editing software, this tool provides a clean and intuitive interface that lets you protect and brand your photos in seconds.",
-    "tech_stack": [
-      "Python",
-      "Tkinter",
-      "Pillow",
-      "tkinterdnd2"
-    ],
+    "tech_stack": ["Python", "Tkinter", "Pillow", "tkinterdnd2"],
     "links": {
       "github": "https://github.com/WiraAFauzi/watermark-studio.git"
     }
@@ -83,10 +67,7 @@
   {
     "title": "Typing Speed Trainer",
     "description": "A modern Tkinter desktop app that tests and trains your typing speed. Built with Python, featuring a clean UI, rotating text samples, a countdown timer, and a persistent leaderboard.",
-    "tech_stack": [
-      "Python",
-      "Tkinter"
-    ],
+    "tech_stack": ["Python", "Tkinter"],
     "links": {
       "github": "https://github.com/WiraAFauzi/typing-speed-test.git"
     }
@@ -94,10 +75,7 @@
   {
     "title": "Breakout Game",
     "description": "A polished Python arcade game inspired by the classic Breakout. Built with Pygame, featuring a start menu, lives selector, instructions, and a Game Over screen with Play Again/Quit options.",
-    "tech_stack": [
-      "Python",
-      "Pygame"
-    ],
+    "tech_stack": ["Python", "Pygame"],
     "links": {
       "github": "https://github.com/WiraAFauzi/breakout-game.git"
     }
@@ -135,185 +113,172 @@
     }
   },
   {
-  "title": "Write or Vanish Game",
-  "description": "A gamified Flask-based writing application that challenges users to keep typing or risk losing their text. Features include difficulty levels, word goals, progress bar countdown, Grace Mode, auto-save, theme toggle (dark/light/sepia), session history, and achievements. Designed for creativity and portfolio presentation, deployed on Render with Gunicorn for production.",
-  "tech_stack": [
-    "Python",
-    "Flask",
-    "Bootstrap",
-    "JavaScript",
-    "Gunicorn",
-    "Render"
-  ],
-  "links": {
-    "github": "https://github.com/WiraAFauzi/write-or-vanish.git",
-    "website": "https://write-or-vanish-wira.onrender.com/"
+    "title": "Write or Vanish Game",
+    "description": "A gamified Flask-based writing application that challenges users to keep typing or risk losing their text. Features include difficulty levels, word goals, progress bar countdown, Grace Mode, auto-save, theme toggle (dark/light/sepia), session history, and achievements. Designed for creativity and portfolio presentation, deployed on Render with Gunicorn for production.",
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "Bootstrap",
+      "JavaScript",
+      "Gunicorn",
+      "Render"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/write-or-vanish.git",
+      "website": "https://write-or-vanish-wira.onrender.com/"
+    }
+  },
+  {
+    "title": "PDF to Audiobook Converter",
+    "description": "A Python-based desktop application that converts PDFs into audiobooks using Google Cloud Text-to-Speech. Supports both text-based and scanned PDFs with OCR fallback via Tesseract. Features include a GUI built with Tkinter, voice selection, speaking rate adjustment, progress bar feedback, and secure API key management via dotenv. Designed for accessibility, productivity, and portfolio presentation.",
+    "tech_stack": [
+      "Python",
+      "Tkinter",
+      "PyPDF2",
+      "PyMuPDF",
+      "Pytesseract",
+      "Pillow",
+      "Requests",
+      "Google Cloud Text-to-Speech",
+      "dotenv"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/text-to-speech.git"
+    }
+  },
+  {
+    "title": "Image Color Extractor",
+    "description": "A Flask-based web application that extracts the most dominant colors from uploaded images using KMeans clustering. Features include an intuitive upload interface, dynamic color swatch generation, percentage breakdowns, and palette downloads in JSON, CSS, and PNG formats. Designed for designers, developers, and portfolio presentation with clean UI and linter-safe code.",
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "Pillow",
+      "NumPy",
+      "Scikit-learn",
+      "HTML5",
+      "CSS3",
+      "Jinja2"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/Image-Color-Extractor.git",
+      "website": "https://image-color-extractor-2ggd.onrender.com"
+    }
+  },
+  {
+    "title": "Multi-Site Recipe Scraper (GUI)",
+    "description": "A Python Tkinter-based GUI application that scrapes recipes from AllRecipes, BBC Good Food, and Epicurious. Features include dynamic recipe search, progress updates, thumbnail image embedding in Excel, clickable recipe links, ratings and review counts, and export to CSV, Excel, and JSON formats. Designed for portfolio presentation with clean code, dark mode UI, and search history logging.",
+    "tech_stack": [
+      "Python",
+      "Tkinter",
+      "Playwright",
+      "Pandas",
+      "OpenPyXL",
+      "Pillow",
+      "recipe-scrapers"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/Multi-Site-Recipe-Scraper.git"
+    }
+  },
+  {
+    "title": "Space Invaders (Python Turtle Game)",
+    "description": "A retro-style Space Invaders clone built with Python’s turtle graphics library. Features include alien grid movement, player-controlled laser base, bunkers that absorb damage, alien bullets, mystery ship with random power-ups (Rapid Fire, Spread Shot, Pierce), multiple levels with scaling difficulty, lives counter, and a replayable Game Over screen. Designed for portfolio presentation with clean, modular code and arcade-inspired gameplay.",
+    "tech_stack": ["Python", "Turtle Graphics", "Time", "Random", "Sys"],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/space-invaders.git"
+    }
+  },
+  {
+    "title": "Food Facts Finder (Flask Web App)",
+    "description": "A nutrition-focused web application powered by Flask and the Open Food Facts API. Users can search products by barcode or name, view nutrition dashboards with color-coded bars, check health indicators (Healthy / Moderate / Unhealthy), and save products to Favorites stored locally in the browser. Includes a Favorites modal for managing saved items and rotating daily food safety/nutrition articles.",
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Open Food Facts API",
+      "Gunicorn"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/food-facts.git",
+      "website": "https://food-facts-6p6p.onrender.com/"
+    }
+  },
+  {
+    "title": "Flask E-Commerce Web App (Stripe Integration)",
+    "description": "A full-stack e-commerce web application built with Flask. Features product browsing, cart and order management, secure Stripe Checkout payments, and an admin dashboard for managing products and orders. Includes user authentication, role-based admin access, image uploads, and Stripe Webhook verification for real-world payment handling. Designed as a production-style portfolio project.",
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "SQLAlchemy",
+      "SQLite",
+      "HTML",
+      "CSS",
+      "Jinja2",
+      "Stripe API",
+      "Stripe Webhooks",
+      "Gunicorn"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/flask-ecommerce-stripe"
+    }
+  },
+  {
+    "title": "Downloads Organizer Dashboard",
+    "description": "A Flask-powered automation tool that organizes files in the Downloads folder by type. Provides a clean dashboard UI with one-click cleanup, category summaries, progress bars, and detailed logs of moved files. Designed as a practical automation project and portfolio showcase.",
+    "tech_stack": ["Python", "Flask", "HTML", "CSS", "Jinja2", "OS & Shutil"],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/organise_downloads.git"
+    }
+  },
+  {
+    "title": "Space Missions Data Analysis (1957–2020)",
+    "description": "A comprehensive data analysis project examining global space missions from the beginning of the Space Race to the modern commercial era. The project explores launch trends, organisational dominance, mission reliability, seasonal patterns, cost dynamics, and geopolitical competition using structured data cleaning, feature engineering, and time-series visualization techniques.",
+    "tech_stack": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Jupyter Notebook"
+    ],
+    "skills_demonstrated": [
+      "Data Cleaning & Preprocessing",
+      "Feature Engineering",
+      "Time-Series Analysis",
+      "Exploratory Data Analysis (EDA)",
+      "Data Visualization",
+      "Geopolitical & Economic Trend Analysis"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/space-missions-analysis"
+    }
+  },
+  {
+    "title": "Fatal Police Shootings Data Analysis (2015–Present)",
+    "description": "A comprehensive data analysis project examining fatal police shootings in the United States since 2015. The project explores demographic patterns, socioeconomic correlations, geographic distribution, mental health indicators, proportional racial representation, and temporal trends using structured data cleaning, aggregation, and advanced visualization techniques.",
+    "tech_stack": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Jupyter Notebook"
+    ],
+    "skills_demonstrated": [
+      "Data Cleaning & Preprocessing",
+      "Feature Engineering",
+      "Exploratory Data Analysis (EDA)",
+      "Time-Series Analysis",
+      "Geospatial Visualization (Choropleth Mapping)",
+      "Statistical Correlation Analysis",
+      "Demographic & Socioeconomic Analysis"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/fatal-police-shootings-analysis"
+    }
   }
-},
-{
-      "title": "PDF to Audiobook Converter",
-      "description": "A Python-based desktop application that converts PDFs into audiobooks using Google Cloud Text-to-Speech. Supports both text-based and scanned PDFs with OCR fallback via Tesseract. Features include a GUI built with Tkinter, voice selection, speaking rate adjustment, progress bar feedback, and secure API key management via dotenv. Designed for accessibility, productivity, and portfolio presentation.",
-      "tech_stack": [
-        "Python",
-        "Tkinter",
-        "PyPDF2",
-        "PyMuPDF",
-        "Pytesseract",
-        "Pillow",
-        "Requests",
-        "Google Cloud Text-to-Speech",
-        "dotenv"
-  ],
-      "links": {
-        "github": "https://github.com/WiraAFauzi/text-to-speech.git"
-  }
-},
-{
-  "title": "Image Color Extractor",
-  "description": "A Flask-based web application that extracts the most dominant colors from uploaded images using KMeans clustering. Features include an intuitive upload interface, dynamic color swatch generation, percentage breakdowns, and palette downloads in JSON, CSS, and PNG formats. Designed for designers, developers, and portfolio presentation with clean UI and linter-safe code.",
-  "tech_stack": [
-    "Python",
-    "Flask",
-    "Pillow",
-    "NumPy",
-    "Scikit-learn",
-    "HTML5",
-    "CSS3",
-    "Jinja2"
-  ],
-  "links": {
-    "github": "https://github.com/WiraAFauzi/Image-Color-Extractor.git",
-    "website": "https://image-color-extractor-2ggd.onrender.com"
-  }
-},
-{
-  "title": "Multi-Site Recipe Scraper (GUI)",
-  "description": "A Python Tkinter-based GUI application that scrapes recipes from AllRecipes, BBC Good Food, and Epicurious. Features include dynamic recipe search, progress updates, thumbnail image embedding in Excel, clickable recipe links, ratings and review counts, and export to CSV, Excel, and JSON formats. Designed for portfolio presentation with clean code, dark mode UI, and search history logging.",
-  "tech_stack": [
-    "Python",
-    "Tkinter",
-    "Playwright",
-    "Pandas",
-    "OpenPyXL",
-    "Pillow",
-    "recipe-scrapers"
-  ],
-  "links": {
-    "github": "https://github.com/WiraAFauzi/Multi-Site-Recipe-Scraper.git"
-  }
-},
-{
-  "title": "Space Invaders (Python Turtle Game)",
-  "description": "A retro-style Space Invaders clone built with Python’s turtle graphics library. Features include alien grid movement, player-controlled laser base, bunkers that absorb damage, alien bullets, mystery ship with random power-ups (Rapid Fire, Spread Shot, Pierce), multiple levels with scaling difficulty, lives counter, and a replayable Game Over screen. Designed for portfolio presentation with clean, modular code and arcade-inspired gameplay.",
-  "tech_stack": [
-    "Python",
-    "Turtle Graphics",
-    "Time",
-    "Random",
-    "Sys"
-  ],
-  "links": {
-    "github": "https://github.com/WiraAFauzi/space-invaders.git"
-  }
-},
-{
-  "title": "Food Facts Finder (Flask Web App)",
-  "description": "A nutrition-focused web application powered by Flask and the Open Food Facts API. Users can search products by barcode or name, view nutrition dashboards with color-coded bars, check health indicators (Healthy / Moderate / Unhealthy), and save products to Favorites stored locally in the browser. Includes a Favorites modal for managing saved items and rotating daily food safety/nutrition articles.",
-  "tech_stack": [
-    "Python",
-    "Flask",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Open Food Facts API",
-    "Gunicorn"
-  ],
-  "links": {
-    "github": "https://github.com/WiraAFauzi/food-facts.git",
-    "website": "https://food-facts-6p6p.onrender.com/"
-  }
-},
-{
-  "title": "Flask E-Commerce Web App (Stripe Integration)",
-  "description": "A full-stack e-commerce web application built with Flask. Features product browsing, cart and order management, secure Stripe Checkout payments, and an admin dashboard for managing products and orders. Includes user authentication, role-based admin access, image uploads, and Stripe Webhook verification for real-world payment handling. Designed as a production-style portfolio project.",
-  "tech_stack": [
-    "Python",
-    "Flask",
-    "SQLAlchemy",
-    "SQLite",
-    "HTML",
-    "CSS",
-    "Jinja2",
-    "Stripe API",
-    "Stripe Webhooks",
-    "Gunicorn"
-  ],
-  "links": {
-    "github": "https://github.com/WiraAFauzi/flask-ecommerce-stripe"
-  }
-},
-{
-  "title": "Downloads Organizer Dashboard",
-  "description": "A Flask-powered automation tool that organizes files in the Downloads folder by type. Provides a clean dashboard UI with one-click cleanup, category summaries, progress bars, and detailed logs of moved files. Designed as a practical automation project and portfolio showcase.",
-  "tech_stack": [
-    "Python",
-    "Flask",
-    "HTML",
-    "CSS",
-    "Jinja2",
-    "OS & Shutil"
-  ],
-  "links": {
-    "github": "https://github.com/WiraAFauzi/organise_downloads.git"
-  }
-},
-{
-  "title": "Space Missions Data Analysis (1957–2020)",
-  "description": "A comprehensive data analysis project examining global space missions from the beginning of the Space Race to the modern commercial era. The project explores launch trends, organisational dominance, mission reliability, seasonal patterns, cost dynamics, and geopolitical competition using structured data cleaning, feature engineering, and time-series visualization techniques.",
-  "tech_stack": [
-    "Python",
-    "Pandas",
-    "NumPy",
-    "Matplotlib",
-    "Seaborn",
-    "Plotly",
-    "Jupyter Notebook"
-  ],
-  "skills_demonstrated": [
-    "Data Cleaning & Preprocessing",
-    "Feature Engineering",
-    "Time-Series Analysis",
-    "Exploratory Data Analysis (EDA)",
-    "Data Visualization",
-    "Geopolitical & Economic Trend Analysis"
-  ],
-  "links": {
-    "github": "https://github.com/WiraAFauzi/space-missions-analysis"
-  }
-},
-{
-  "title": "Fatal Police Shootings Data Analysis (2015–Present)",
-  "description": "A comprehensive data analysis project examining fatal police shootings in the United States since 2015. The project explores demographic patterns, socioeconomic correlations, geographic distribution, mental health indicators, proportional racial representation, and temporal trends using structured data cleaning, aggregation, and advanced visualization techniques.",
-  "tech_stack": [
-    "Python",
-    "Pandas",
-    "NumPy",
-    "Matplotlib",
-    "Seaborn",
-    "Plotly",
-    "Jupyter Notebook"
-  ],
-  "skills_demonstrated": [
-    "Data Cleaning & Preprocessing",
-    "Feature Engineering",
-    "Exploratory Data Analysis (EDA)",
-    "Time-Series Analysis",
-    "Geospatial Visualization (Choropleth Mapping)",
-    "Statistical Correlation Analysis",
-    "Demographic & Socioeconomic Analysis"
-  ],
-  "links": {
-    "github": "https://github.com/WiraAFauzi/fatal-police-shootings-analysis"
-  }
-}
 ]
