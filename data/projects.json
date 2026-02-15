@@ -280,5 +280,23 @@
     "links": {
       "github": "https://github.com/WiraAFauzi/fatal-police-shootings-analysis"
     }
+  },
+  {
+  "title": "AI Text Enhancer (FastAPI Microservice with Docker)",
+  "description": "A containerized AI-powered text transformation microservice built with FastAPI and Docker. The service exposes REST endpoints that enhance, rewrite, and reformat text into different styles such as professional tone, summaries, and improved clarity. Designed with production-ready architecture including environment-based feature flags, graceful fallback to mock mode when AI quota is unavailable, structured API responses, and automatic Swagger documentation. Fully deployable to cloud platforms and configurable for both demo and live AI environments.",
+  "tech_stack": [
+    "Python",
+    "FastAPI",
+    "Docker",
+    "OpenAI API",
+    "Pydantic",
+    "Uvicorn",
+    "REST API",
+    "Render (Cloud Deployment)"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/AI-Text-Enhancer.git",
+    "website": "https://ai-text-enhancer-j4sb.onrender.com/docs"
   }
+}
 ]
