@@ -298,5 +298,22 @@
     "github": "https://github.com/WiraAFauzi/AI-Text-Enhancer.git",
     "website": "https://ai-text-enhancer-j4sb.onrender.com/docs"
   }
-}
+  },
+  {
+  "title": "Offline First Encrypted Chat (Flutter + CRDT + Background Sync)",
+  "description": "A distributed offline-first chat application built with Flutter, implementing deterministic conflict resolution and background synchronization. Messages are persisted locally using Drift (SQLite), encrypted before storage and cloud upload, and synchronized with Firebase Firestore using a custom sync engine and WorkManager background tasks. The system uses a CRDT-inspired Last-Write-Wins strategy with logical clocks and device identifiers to guarantee eventual consistency across devices. Designed to handle airplane mode, app termination mid-sync, slow networks, duplicate prevention, and two-device conflict scenarios.",
+  "tech_stack": [
+    "Flutter",
+    "Dart",
+    "Drift (SQLite)",
+    "Firebase Firestore",
+    "WorkManager",
+    "Connectivity Plus",
+    "CRDT (LWW Strategy)",
+    "End-to-End Encryption"
+  ],
+  "links": {
+    "github": "https://github.com/WiraAFauzi/offline-first-encrypted-chat.git"
+  }
+  }
 ]
