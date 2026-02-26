@@ -3,7 +3,7 @@ import json
 import os
 from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+from sendgrid.helpers.mail import Mail, Email
 
 # --------------------
 # LOAD ENV VARIABLES
@@ -11,13 +11,20 @@ from sendgrid.helpers.mail import Mail
 load_dotenv()
 
 SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
-FROM_EMAIL = os.environ.get("FROM_EMAIL")  # must be verified in SendGrid
+FROM_EMAIL = os.environ.get("FROM_EMAIL")
+SECRET_KEY = os.environ.get("SECRET_KEY")
+
+# Fail fast in production if critical env vars missing
+if not SECRET_KEY:
+    raise RuntimeError("SECRET_KEY is not set")
 
 # --------------------
 # APP SETUP
 # --------------------
 app = Flask(__name__)
-app.secret_key = os.environ.get("SECRET_KEY", "fallback-secret-key")
+app.secret_key = SECRET_KEY
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # --------------------
 # ROUTES
@@ -42,13 +49,20 @@ def portfolio():
 def contact():
     if request.method == "POST":
         try:
-            name = request.form["name"]
-            email = request.form["email"]
-            service = request.form["service"]
-            message = request.form["message"]
+            if not SENDGRID_API_KEY or not FROM_EMAIL:
+                raise RuntimeError("SendGrid configuration missing")
+
+            name = request.form.get("name", "").strip()
+            email = request.form.get("email", "").strip()
+            service = request.form.get("service", "").strip()
+            message = request.form.get("message", "").strip()
+
+            if not name or not email or not message:
+                flash("Please fill in all required fields.")
+                return redirect(url_for("contact"))
 
             email_body = f"""
-New Portfolio Inquiry 🚀
+New Portfolio Inquiry
 
 Name: {name}
 Email: {email}
@@ -64,16 +78,16 @@ Message:
                 subject=f"New Inquiry: {service}",
                 plain_text_content=email_body,
             )
-            mail.reply_to = email
+
+            # Proper reply-to handling
+            mail.reply_to = Email(email)
 
             sg = SendGridAPIClient(SENDGRID_API_KEY)
             response = sg.send(mail)
 
-            print("SENDGRID RESPONSE STATUS:", response.status_code)
-            print("SENDGRID RESPONSE HEADERS:", response.headers)
-            print("SENDGRID RESPONSE BODY:", response.body)
+            print("SENDGRID STATUS:", response.status_code)
 
-            if response.status_code >= 200 and response.status_code < 300:
+            if 200 <= response.status_code < 300:
                 flash("Thank you! Your message has been sent successfully.")
             else:
                 flash("Email failed to send. Please try again later.")
@@ -91,12 +105,21 @@ Message:
 
 @app.route("/api/projects")
 def projects():
-    with open("data/projects.json", encoding="utf-8") as f:
-        return jsonify(json.load(f))
+    try:
+        projects_path = os.path.join(BASE_DIR, "data", "projects.json")
+        with open(projects_path, encoding="utf-8") as f:
+            return jsonify(json.load(f))
+    except Exception as e:
+        return jsonify({"error": "Unable to load projects"}), 500
+
+
+@app.route("/health")
+def health():
+    return {"status": "ok"}, 200
 
 
 # --------------------
-# RUN SERVER
+# RUN SERVER (Local Dev Only)
 # --------------------
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
