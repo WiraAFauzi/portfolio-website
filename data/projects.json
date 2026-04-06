@@ -315,5 +315,20 @@
   "links": {
     "github": "https://github.com/WiraAFauzi/offline-first-encrypted-chat.git"
   }
+  },
+  {
+    "title": "WiraBox — Developer Tool Suite",
+    "description": "A modern desktop developer toolkit built with JavaFX, featuring an API tester, JSON formatter, Base64 tool, hash generator, log viewer, and an advanced SQLite database explorer. Designed with clean architecture principles, asynchronous processing, and a focus on developer experience. Includes dynamic table rendering, query execution, CSV export, saved connections, and multi-tab database sessions.",
+    "tech_stack": [
+      "Java 21",
+      "JavaFX 21",
+      "Gradle",
+      "OkHttp",
+      "Jackson",
+      "SQLite JDBC"
+    ],
+    "links": {
+      "github": "https://github.com/WiraAFauzi/wirabox"
+    }
   }
 ]
